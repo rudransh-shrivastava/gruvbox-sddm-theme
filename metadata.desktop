@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=gruvbox-hard
+Description=Gruvbox hard theme by Rudransh Shrivastava
+Author=Rudransh Shrivastava
+Copyright=(c) 2023, Rudransh Shrivastava
+License=CC-BY-SA
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/rudransh-shrivastava
+Screenshot=gruvbox-hard.jpg
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=rudransh.shr@gmail.com
+Theme-Id=gruvbox-hard
+Theme-API=2.0
