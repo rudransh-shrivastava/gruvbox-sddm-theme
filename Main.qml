@@ -76,8 +76,11 @@ Rectangle {
                         width: parent.width; height: 50
                         text: userModel.lastUser
                         font.pixelSize: 30
-			color: "#1d2021"
-			textColor: "#dcca9e"
+                        color: "#1d2021"
+                        textColor: "#dcca9e"
+                        borderColor: "transparent"
+
+
 
                         KeyNavigation.backtab: rebootButton; KeyNavigation.tab: password
 
@@ -98,8 +101,9 @@ Rectangle {
                         id: password
                         width: parent.width; height: 50
                         font.pixelSize: 30
-			color: "#1d2021"
-			textColor: "#dcca9e"
+                        color: "#1d2021"
+                        textColor: "#dcca9e"
+                        borderColor: "transparent"
 
                         KeyNavigation.backtab: name; KeyNavigation.tab: session
 
@@ -128,8 +132,9 @@ Rectangle {
                             width: parent.width; height: 50
                             font.pixelSize: 30
                             color: "#1d2021"
-			    textColor: "#dcca9e"
-		  	    
+                            textColor: "#dcca9e"
+                            borderColor: "transparent"
+
 
                             model: sessionModel
                             index: sessionModel.lastIndex
@@ -150,9 +155,9 @@ Rectangle {
                         id: shutdownButton
                         text: textConstants.shutdown
                         width: parent.btnWidth
-			color: "#1d2021"
-			textColor: "#dcca9e"
-			font.pixelSize: 30
+                        color: "#1d2021"
+                        textColor: "#dcca9e"
+                        font.pixelSize: 30
 
                         onClicked: sddm.powerOff()
 
@@ -163,9 +168,9 @@ Rectangle {
                         id: rebootButton
                         text: textConstants.reboot
                         width: parent.btnWidth
-			color: "#1d2021"
-			textColor: "#dcca9e"
-			font.pixelSize: 30
+                        color: "#1d2021"
+                        textColor: "#dcca9e"
+                        font.pixelSize: 30
 
                         onClicked: sddm.reboot()
 
@@ -176,9 +181,9 @@ Rectangle {
                         id: loginButton
                         text: textConstants.login
                         width: parent.btnWidth
-			color: "#1d2021"
-			textColor: "#dcca9e"
-			font.pixelSize: 30
+                        color: "#1d2021"
+                        textColor: "#dcca9e"
+                        font.pixelSize: 30
 
 
                         onClicked: sddm.login(name.text, password.text, sessionIndex)
